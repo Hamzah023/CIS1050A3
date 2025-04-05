@@ -3,51 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="css/webstyle.css">
+    <title>Hamzah Imran - Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm [Your Name], a [Your Profession].</p>
+        <h1>Hamzah Imran</h1>
+        <p>Mississauga, ON, Canada | <a href="http://www.LinkedIn.com/in/hamzahimrann" target="_blank" rel="noopener">LinkedIn</a> | <a href="mailto:himran02@uoguelph.ca">himran02@uoguelph.ca</a></p>
     </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>[A brief introduction about yourself]</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
+
+    <nav>
         <ul>
-            <li>
-                <h3>[Project Title]</h3>
-                <p>[Project description]</p>
-                <img src="images/[project-image.jpg]" alt="[Project Title] Screenshot">
-            </li>
-            <!-- Add more projects as needed -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="workExperience.html" title="Work Experience">Work Experience</a></li>
         </ul>
-    </section>
+    </nav>
+
+    <section class="card about-me">
+        <div class="about-content">
+            <h2>About Me</h2>
     
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>[Skill 1]</li>
-            <li>[Skill 2]</li>
-            <li>[Skill 3]</li>
-            <!-- Add more skills as needed -->
-        </ul>
-    </section>
+            <div class="content-row">
+                <p>
+                    Hi, I’m Hamzah. I’m a computer science student at the University of Guelph with a minor in project management. 
+                    My interest in technology started with watching TV shows and movies like Shark Tank and The Social Network. 
+                    What I liked about technology was how accessible it was. Learning to code allows you to create anything you
+                    can think of. There is no bureaucracy with it. It has the power to be revolutionary.
+                </p>
+            </div>
     
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: [Your Email]</p>
-        <p>LinkedIn: [Your LinkedIn Profile]</p>
-        <!-- Add more contact methods as needed -->
-    </section>
+            <div class="content-row reverse">
+                <p>
+                    At 17, I knew I wanted to build new companies for a living, and I combined my confidence and extroverted personality
+                    with a love for startups. I started working at a San Francisco startup called EOXS. 
+                    They were a software-as-a-service building enterprise resource planning software for 
+                    steel contractors; think of it as the Amazon for steel. At EOXS, I was a sales and 
+                    marketing intern. I found the work monotonous, with the ability to be automated.
+                    Doing this kind of repetitive work sparked my initial interest in automation.
+                </p>
+            </div>
     
+            <div class="content-row">
+                <p>
+                    After graduating high school, I decided to pursue an honors bachelor of computing, co-op computer science 
+                    degree at the University of Guelph. The summer before my first year, I worked with a third-year Guelph 
+                    Computer Engineering major on building Birbl, an AI search engine custom-made for large organizations, 
+                    allowing for fast retrieval of large documents. I did their front-end web development using tools such 
+                    as React and JavaScript. Unfortunately, the startup fell apart, but it was a great learning experience.
+                </p>
+            </div>
+    
+            <div class="content-row reverse">
+                <p>
+                    As the first year started, I started getting adjusted to university life. I became a campus ambassador 
+                    for Jarvis Consulting Group, learned C and manual memory management, and started building my projects.
+                    The summer of my first year had me interning at a technology consultancy with operations in the Middle East. 
+                    This job was the hardest I have had so far, as I was working 14-15 hours a day trying to make professional
+                     API endpoints and web app components. I remember how much I struggled with GIT, as learning how to solve
+                    merge conflicts felt scary. There were a few times when I would be finished with a complex feature and 
+                    would commit only to have it magically erased from my computer, and I would have to start over.
+                </p>
+            </div>
+    
+            <div class="content-row">
+                <p>
+                    I wish I could say I got everything fast and still had a work-life balance, but that summer was truly the worst. 
+                    I neglected my friends, my loved ones, and myself. If I could do it all over again, I wouldn’t try to know everything.
+                    I don’t know. I know better now, but she’s gone, so it’s too late. You know I was so scared of failing out of the CS program;
+                    I worked so hard to do it all. Get good grades, build projects, and get work experience. But if I could do it all over, 
+                    I wouldn’t have worked so hard. You always think you have time left with those you love. But you don’t; learn from 
+                    my mistakes and live every day like it’s your last.
+                </p>
+            </div>
+    
+            <div class="content-row">
+                <p>
+                    When I’m not coding, you’ll probably find me lowballing people on Facebook Marketplace and bawling my eyes out because 
+                    I’m not God’s strongest soldier. I believe in maintaining a balance between work and personal life, but I am struggling
+                    at the moment because work and school are very demanding. My goal is to use technology to solve meaningful problems 
+                    and make a positive impact. Please give me a nice mark, because the Angel of Death has destroyed every fibre of my being,
+                    and I want to survive. Thanks for stopping by, and I hope you enjoy exploring my portfolio.
+                </p>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="images/me.jpeg" alt="Picture of Hamzah">
+        </div>
+    </section>
+
+
+    <section class="card">
+        <div class="card-content">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> C, C#, Python, Java, JavaScript, TypeScript</li>
+                <li><strong>Frameworks & Tools:</strong> React, SpringBoot, ASP.NET, Flask, FastAPI, Docker, Kubernetes</li>
+                <li><strong>Databases:</strong> PostgreSQL, NoSQL, SQLite, SQLAlchemy</li>
+                <li><strong>Other Tools:</strong> Git, Jira, Figma, Power BI, Selenium</li>
+            </ul>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; [Year] [Your Name]. All rights reserved.</p>
+        <p>&copy; 2025 Hamzah Imran Productions. All rights reserved.</p>
     </footer>
 </body>
 </html>

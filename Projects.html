@@ -4,34 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/webstyle.css">
+
     <title>Projects</title>
+
 </head>
 <body>
-    <header>
-        <h1>My Projects</h1>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="one.html">About Me</a></li>
-                <li><a href="two.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
     
-    <section>
-        <h2>Featured Projects</h2>
+    <header>
+        <h1>Projects</h1>
+
+        <p>Mississauga, ON, Canada | <a href="http://www.LinkedIn.com/in/hamzahimrann" target="_blank" rel="noopener">LinkedIn</a> | <a href="mailto:himran02@uoguelph.ca">himran02@uoguelph.ca</a></p>
+    </header>
+
+    <nav>
         <ul>
-            <li>
-                <h3>[Project Title]</h3>
-                <p>[Project description]</p>
-                <img src="images/[project-image.jpg]" alt="[Project Title] Screenshot">
-            </li>
-            <!-- Add more projects as needed -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="workExperience.html" title="Work Experience">Work Experience</a></li>
         </ul>
+    </nav>
+
+    <section>
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="project-card">
+
+            <a href="https://github.com/Hamzah023/CustomerChurnPredictionModel" target="_blank" rel="noopener">
+
+                <div class="slideshow-container">
+
+                    <div class="slide">
+
+                        <img src="images/churn-prediction.png" alt="Telco Customer Churn Prediction Model Screenshot">
+                    </div>
+                </div>
+            </a>
+            <div class="project-content">
+                <h3>Telco Customer Churn Prediction Model</h3>
+                <p>
+                    I built a churn prediction system that uses Machine Learning concepts to figure out which customers of a company are most likely to leave. 
+                    I got the idea from wondering how telecom companies always know which customers to target with offers to continue using their service. 
+                    For this project, I had to dive into how Machine Learning works. It's a very complicated field, but the gist of it is that Machine Learning 
+                    prioritizes statistical techniques to guess what the answer will be in a pattern.
+                </p>
+                
+                <p>
+                    There are different methods of doing this, and it depends on what the use cases are. For this use case, I needed an algorithm that was supervised 
+                    and could classify data from past data. Therefore, I decided to use the Random Forest Classification algorithm. First, I needed a dataset to work with. 
+                    I found a dataset on Kaggle that was a Telco Customer Churn dataset. It had 10,000+ rows and 20+ columns.
+                </p>
+                
+                <p>
+                    However, the data was not in good condition to use to train a Machine Learning model. I needed to clean the data using a Python Pandas script. 
+                    The script would take the dataset and remove any rows that had missing values, and then I used One-Hot Encoding to convert categorical data into numerical data. 
+                    After that, I used SMOTE to balance the dataset. SMOTE is a technique that allows you to create synthetic data points in the dataset to balance it out.
+                </p>
+                
+                <p>
+                    After that, I split the dataset into a training and testing set. I then used the training set to train the model and tested it on the testing set. 
+                    I used a confusion matrix to see how well the model performed. The model was able to predict churn with 84% accuracy. I then saved the data inside an SQLite 
+                    database, which is a lightweight database that is easy to use and can be used in production. 
+                </p>
+                
+                <p>
+                    To visualize the data, I'd run the cleaned and processed data through a Python script that would create a dashboard using PowerBI, this would allow me 
+                    to visualize the data in a way that was easy to understand. I used PowerBI because it is a powerful tool that allows you to create interactive dashboards.
+                    That's how I was able to create the Graph above, which shows the sum of tenure by monthly charges and positive churn.
+                </p>
+
+                <p>
+                    I used Jupyter Notebook, Python, Pandas, Scikit-learn, Seaborn, and Matplotlib to do all of this. I also used SQLite and SQLAlchemy to store the data. 
+                    To automate this process of ingesting data, cleaning it, and then storing it in a database, I developed an automated ETL pipeline.
+                </p>
+                
+                <p>
+                    This is a project that I'm quite proud of. I learned a lot about Machine Learning and how to use it to solve real-world problems. 
+                    I also learned a lot about data cleaning and how important it is to have clean data to work with.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card">
+
+
+            <a href="https://github.com/Hamzah023/webCrawler" target="_blank" rel="noopener">
+
+                <img src="images/web-crawler1.png" alt="Wikipedia Web Crawler Screenshot">
+            </a>
+
+            <div class="project-content">
+                <h3>Wikipedia Web Crawler</h3>
+                <p>
+                    This was the very first project I ever made and was my introduction to object-oriented programming. As I mentioned, I was interested 
+                    in automating monotonous tasks. Monotonous tasks typically involve moving data from one place to another. This task can be automated 
+                    using a web crawler. A web crawler can navigate a website by itself, find the deepest level of the website, and return data.
+                </p>
+                
+                <p>
+                    That's exactly what this web crawler does. For example, if you wanted to find the contents of a Wikipedia page, you could use this web crawler to do that. 
+                    It would go to the Wikipedia page, find all the links on that page, and then visit each of those links to find all the links on those pages. 
+                    It would continue this process until it reached a depth of 5, returning the contents of all the pages it found.
+                </p>
+                
+                <p>
+                    To accomplish this, I used Java, particularly the Jsoup library. Jsoup is a Java library that allows you to parse HTML and extract data from it. 
+                    You can see how powerful this is if used correctly. I used Jsoup to create the web crawler and implemented a recursive method to crawl through the web pages.
+                </p>
+                
+                <p>
+                    Recursion is a programming technique where a method calls itself to solve a problem. In this case, the web crawler would call itself to navigate to the next link on the page. 
+                    Pretty cool, eh? I also used Maven to manage the dependencies and build the project. Maven is a build automation tool primarily used for Java projects.
+                </p>
+                
+                <p>
+                    Maven allows you to manage the dependencies of your project and build it easily. It's somewhat similar to Node Package Manager (NPM) for JavaScript or Python's pip. 
+                    This project taught me a lot about object-oriented programming, recursion, and how to use tools like Jsoup and Maven effectively.
+                </p>
+                
+            </div>
+        </div>
+
+        <div class="project-card">
+
+            <a href="https://github.com/Hamzah023/BrickDoorBackend" target="_blank" rel="noopener">
+                
+                <img src="images/brickdoor.jpg" alt="BrickDoor Project Screenshot">
+            </a>
+
+            <div class="project-content">
+
+                <h3>BrickDoor</h3>
+                <p>
+                    BrickDoor is the embodiment of my passion for leaving things better than how I found them. In my second year, as I was applying to companies, whenever I landed an interview, 
+                    I would try to find past experiences with the company and the interview process. Platforms such as Glassdoor were not very helpful, as they were not accurate for co-op positions.
+                </p>
+                
+                <p>
+                    I wanted to build a platform that would allow Guelph co-op students to share their experiences with companies and the interview process. 
+                    This would provide people with tailored information about the company and the interview process, giving them a greater chance of landing the job. 
+                    My girlfriend at the time suggested the name "BrickDoor" as a joke, and I decided to go with it. Unfortunately, she would go on to break my heart, 
+                    but her memory lives on in the name.
+                </p>
+                
+                <p>
+                    To build this project, I decided to use Java Spring Boot for its versatility in building web applications, as well as its ability to scale. 
+                    I also used React for the front end, as it is a powerful library for building user interfaces. For the database, I used PostgreSQL, as it is a powerful relational database 
+                    that is easy to use and suitable for production. PostgreSQL has the ability to store objects in the database, which is useful for this project, as you can have a community object, 
+                    a post object, and so on.
+                </p>
+                
+                <p>
+                    This project was a great learning experience for me, as I learned a lot about how to build a web application from scratch. 
+                    BrickDoor is still a work in progress, as I am continuing to work on the front end and back end. I am also working on adding more features to the platform, 
+                    such as a search feature and a rating system.
+                </p>
+            </div>
+            
+        </div>
+
     </section>
     
     <footer>
-        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+
+        <p>&copy; 2025 Hamzah Imran. All rights reserved.</p>
     </footer>
 </body>
 </html>
