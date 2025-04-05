@@ -1,0 +1,332 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(90deg, #121212, #1a1a1a); 
+    color: #e0e0e0; /* llLight gray text for better readability */
+}
+
+header {
+    background: url('../images/StarWarsStars.jpg') no-repeat center center; 
+    background-size: cover; 
+    color: #ffffff; 
+    padding: 40px 0; 
+    text-align: center;
+    border-bottom: 5px solid #BB86FC; /* purple line at  bottom */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #ffffff; 
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); 
+}
+
+header p {
+    margin: 10px 0;
+    color: #e0e0e0; 
+    font-size: 1.2rem; 
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); 
+}
+
+header a {
+    color: #BB86FC; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+
+header a:hover {
+    color: #FFD700; /* gold on hover pretty coool */
+}
+
+/* Navigation Bar */
+nav {
+    background: #121212; 
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #BB86FC; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Gold on hover */
+}
+
+/* Section Styles */
+section {
+    padding: 40px; 
+    margin: 40px auto; 
+    max-width: 1200px; 
+    width: 90%; 
+    background: #1a1a1a; 
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8); 
+}
+
+section h2 {
+    color: #BB86FC; 
+    border-bottom: 3px solid #BB86FC; 
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Image Styles */
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); 
+}
+
+/* List styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 20px; 
+}
+
+/* Footer  Styles */
+footer {
+    background: #6A1B9A; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Link Styles */
+a {
+    color: #BB86FC; /* Bright purple links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FFD700; 
+}
+
+/* About Me Card Styles */
+.about-me {
+    position: relative; 
+    background: #1a1a1a; 
+    border-radius: 12px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8); 
+    padding: 30px 20px 20px; 
+    margin: 40px auto;
+    max-width: 1000px; 
+    overflow: hidden; 
+    text-align: center; 
+}
+
+.about-me .about-image {
+    position: absolute; 
+    top: 5px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); 
+    background: #1a1a1a; 
+    border: 3px solid #BB86FC; 
+}
+
+.about-me .about-image img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
+.about-me .about-content {
+    color: #e0e0e0; 
+    margin-top: 150px; 
+}
+
+.about-me .about-content h2 {
+    color: #BB86FC; 
+    margin-bottom: 15px;
+    padding-bottom: 35px;
+    border-bottom: 3px solid #BB86FC; 
+    text-align: center; 
+}
+
+/* Style for images inside  about me section */
+.styled-image {
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Add a shadow*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    margin: 20px 0; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Style for project cards */
+.project-card {
+    background: #1a1a1a; 
+    border-radius: 12px; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+    padding: 20px; 
+    margin: 20px 0; 
+    text-align: left; 
+    color: #e0e0e0; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Add hover effect for project cards */
+.project-card:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5); 
+}
+
+/* Style for project titles */
+.project-card h3 {
+    color: #BB86FC;
+    margin-bottom: 10px; 
+    font-size: 1.5rem; 
+}
+
+/* Style for project descriptions */
+.project-card p {
+    margin-bottom: 15px; 
+    line-height: 1.6; 
+    font-size: 1rem; 
+}
+
+/* Style for project images */
+.project-card img {
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    max-width: 100%; 
+    height: auto; 
+    margin-top: 10px; 
+}
+
+
+/* Hover effect for the images */
+.styled-image:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.work-card {
+    background: #1a1a1a; 
+    border-radius: 12px; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+    padding: 20px; /* Add padding for the card @#@!(#*/
+    margin: 20px 0; /* Add spacing*/
+    color: #e0e0e0; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    text-align: left; 
+}
+
+.work-card-image {
+    max-width: 100px; 
+    height: auto;
+    border-radius: 8px; 
+    margin-bottom: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    display: block; 
+}
+
+.work-card h3 {
+    color: #BB86FC; 
+    margin-bottom: 10px; 
+    font-size: 1.5rem;
+}
+
+.work-card p {
+    margin: 5px 0; 
+    font-size: 1rem; 
+}
+
+.work-card ul {
+    list-style: disc; 
+    margin-left: 20px; 
+    padding-left: 0;
+}
+
+.work-card ul li {
+    margin-bottom: 10px; /* Add spacing between list items */
+    line-height: 1.6; /* improve readability!!*&^%$^&*( */
+}
+
+.work-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+    background: #2a2a2a; /* Slightly lighter background on hover */
+}
+
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(90deg, #BB86FC, #121212); /* gradient from purple to black */
+    color: #ffffff; 
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    border-top: 5px solid #6A1B9A; 
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Styling for the 404 page */
+.error-message {
+    text-align: center;
+    margin: 20px auto;
+    color: #ff6b6b; /* Red for error emphasis */
+}
+
+.error-actions {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.error-actions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.error-actions li {
+    margin: 10px 0;
+}
+
+.error-actions a {
+    color: #4caf50; /* Green for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.error-actions a:hover {
+    text-decoration: underline;
+}
